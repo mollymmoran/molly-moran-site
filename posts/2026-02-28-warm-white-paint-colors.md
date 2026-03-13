@@ -16,7 +16,7 @@ The trap with warm whites is that they can read as yellow, peach, or just dirty 
 
 **Benjamin Moore White Dove OC-17** — the gold standard for good reason. Works in almost every light condition. Never yellow, always warm.
 
-![](/images/img_0979.jpeg)
+![](/images/img_0979.jpeg "Dining room update")
 
 **Sherwin-Williams Shoji White SW 7042** — slightly deeper than White Dove. Perfect for rooms with lots of natural light where you want a little more depth.
 
