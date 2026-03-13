@@ -18,8 +18,6 @@ The trap with warm whites is that they can read as yellow, peach, or just dirty 
 
 ![](/images/img_0979.jpeg)
 
-
-
 **Sherwin-Williams Shoji White SW 7042** — slightly deeper than White Dove. Perfect for rooms with lots of natural light where you want a little more depth.
 
 **Farrow & Ball Pointing No.2003** — the most luxurious of the group. Rich without being dark. Worth the splurge if you're doing a small room.
