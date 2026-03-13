@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "MMMM D, YYYY" }
+      - { label: "Category", name: "category", widget: "select", options: ["Room Makeover", "Paint & Color", "Budget DIY", "Kitchen", "Bedroom", "Bathroom", "Styling Tips", "Before & After", "Shopping Guide"] }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short summary shown on the homepage (1-2 sentences)" }
+      - { label: "Cover Image", name: "cover_image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
