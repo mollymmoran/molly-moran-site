@@ -1,11 +1,11 @@
 ---
-title: "The Only Warm White Paint Colors Worth Trying in 2026"
-date: "February 28, 2026"
-category: "Paint & Color"
-excerpt: "I've sampled over a dozen warm whites so you don't have to. Here are the ones that actually look good in natural and artificial light."
+title: The Only Warm White Paint Colors Worth Trying in 2026
+date: February 28, 2026
+category: Paint & Color
+excerpt: I've sampled over a dozen warm whites so you don't have to. Here are
+  the ones that actually look good in natural and artificial light.
 cover_image: ""
 ---
-
 I have tested more warm white paint colors than I care to admit. Sampled them on large boards. Lived with them across different times of day. Here are the ones that genuinely earned a place in my home.
 
 ## What Makes a Warm White Actually Work
@@ -15,6 +15,10 @@ The trap with warm whites is that they can read as yellow, peach, or just dirty 
 ## My Favorites
 
 **Benjamin Moore White Dove OC-17** — the gold standard for good reason. Works in almost every light condition. Never yellow, always warm.
+
+![](/images/img_0979.jpeg)
+
+
 
 **Sherwin-Williams Shoji White SW 7042** — slightly deeper than White Dove. Perfect for rooms with lots of natural light where you want a little more depth.
 
