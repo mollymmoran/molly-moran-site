@@ -1,8 +1,9 @@
 ---
 title: Dining Room Plans
 date: March 13, 2026
-category: Before & After
+category: Room Makeover
 excerpt: First Post!
+cover_image: /images/diningroom_header.jpg
 ---
 I love our first home. It checks all the practical boxes — three bedrooms, two bathrooms, a finished basement, a garage, a flat backyard (which can feel like winning the Kentucky real estate lottery), and beautiful natural light. When touring the house for the first time we could instantly see its potential and knew it was the right house for us - we are so happy to call it ours.
 
@@ -14,7 +15,7 @@ My design style leans traditional with a few modern touches to keep things feeli
 
 And the dining room? First on the list.
 
-![](/images/diningroom_original.jpeg)
+![](/images/diningroom_before.jpg)
 
 ### **Why Start With the Dining Room?**
 
