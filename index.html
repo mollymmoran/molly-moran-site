@@ -10,13 +10,13 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --black: #0d0d0d;
-      --gold: #b5a96a;
-      --gold-light: #d4c98a;
-      --cream: #f7f3ee;
-      --warm-white: #fdfaf6;
-      --mid-gray: #888;
-      --border: rgba(181,169,106,0.25);
+      --black: #321F12;
+      --gold: #808249;
+      --gold-light: #DFD6A4;
+      --cream: #E1B4A1;
+      --warm-white: #F3EED7;
+      --mid-gray: #A15D66;
+      --border: rgba(128,130,73,0.25);
     }
     html { scroll-behavior: smooth; }
     body { background: var(--warm-white); color: var(--black); font-family: 'Raleway', sans-serif; font-weight: 300; }
@@ -28,7 +28,7 @@
     header { position: sticky; top: 0; z-index: 100; background: var(--warm-white); border-bottom: 1px solid var(--border); }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 80px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
-    .logo-icon { width: 52px; height: 52px; }
+    .logo-icon { width: 60px; height: 60px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
     .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--black); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-top: 3px; }
@@ -175,18 +175,7 @@
 <header>
   <div class="header-inner">
     <div class="logo-wrap" onclick="showPage('home')">
-      <svg class="logo-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="72" height="72" rx="8" stroke="#b5a96a" stroke-width="1.2"/>
-        <rect x="9" y="9" width="62" height="62" rx="6" stroke="#b5a96a" stroke-width="0.6"/>
-        <path d="M28 52 C26 46 20 44 22 38 C24 32 30 30 34 34 C36 30 42 28 44 34 C48 30 52 34 50 40 C48 46 42 48 40 52" stroke="#b5a96a" stroke-width="1" fill="none" stroke-linecap="round"/>
-        <path d="M34 34 C32 40 34 46 34 52" stroke="#b5a96a" stroke-width="0.8" fill="none"/>
-        <path d="M30 40 C34 38 38 40 40 44" stroke="#b5a96a" stroke-width="0.7" fill="none"/>
-        <path d="M44 50 C42 44 48 40 50 36 C52 32 56 32 58 36 C60 40 58 46 54 50" stroke="#b5a96a" stroke-width="1" fill="none" stroke-linecap="round"/>
-        <path d="M50 36 C50 42 50 46 50 52" stroke="#b5a96a" stroke-width="0.8" fill="none"/>
-        <path d="M28 52 C26 56 30 58 32 56" stroke="#b5a96a" stroke-width="0.8" fill="none"/>
-        <path d="M40 52 C40 56 36 60 34 58" stroke="#b5a96a" stroke-width="0.8" fill="none"/>
-        <path d="M50 52 C50 56 46 60 44 58" stroke="#b5a96a" stroke-width="0.8" fill="none"/>
-      </svg>
+      <img class="logo-icon" src="images/logo.png" alt="Molly Moran Design Logo"/>
       <div class="logo-text">
         <span class="name">Molly Moran</span>
         <span class="sub">Design</span>
