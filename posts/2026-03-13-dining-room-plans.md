@@ -1,7 +1,7 @@
 ---
 title: Dining Room Plans
 date: March 13, 2026
-category: Room Makeover
+category: My Home
 excerpt: First Post!
 cover_image: /images/diningroom_header.jpg
 ---
