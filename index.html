@@ -39,14 +39,6 @@
     nav a:hover::after, nav a.active::after { width: 100%; }
     nav a.active { color: var(--gold); }
 
-    /* HERO */
-    .hero { background: var(--black); padding: 90px 40px; text-align: center; position: relative; overflow: hidden; }
-    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, rgba(181,169,106,0.12) 0%, transparent 70%); pointer-events: none; }
-    .hero-eyebrow { font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
-    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(52px, 7vw, 88px); font-weight: 300; color: #fff; line-height: 1.05; letter-spacing: 0.02em; margin-bottom: 24px; }
-    .hero h1 em { font-style: italic; color: var(--gold-light); }
-    .hero p { color: rgba(255,255,255,0.55); font-size: 14px; letter-spacing: 0.08em; max-width: 440px; margin: 0 auto; line-height: 1.8; }
-
     /* SECTION HEADER */
     .section-header { max-width: 1200px; margin: 0 auto; padding: 60px 40px 30px; }
     .section-label { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 14px; }
@@ -164,7 +156,6 @@
     @media (max-width: 600px) {
       .blog-grid, .loading-grid { grid-template-columns: 1fr; }
       .shop-grid { grid-template-columns: 1fr; }
-      .hero { padding: 60px 20px; }
     }
   </style>
 </head>
@@ -191,11 +182,6 @@
 
 <!-- ══════════ HOME PAGE ══════════ -->
 <div id="page-home" class="page active">
-  <section class="hero">
-    <h1>Design Your <em>Dream</em> Home</h1>
-    <p>Real projects, honest budgets, and the inspiration you need to transform any space.</p>
-  </section>
-
   <div class="section-header">
     <div class="section-label">Latest Posts</div>
   </div>
