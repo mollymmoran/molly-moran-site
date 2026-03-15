@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mollymmoran/molly-moran-site
   branch: main
+  base_url: https://mollymorandesign.com
+  auth_endpoint: /api/auth
 
 media_folder: "images"
 public_folder: "/images"
