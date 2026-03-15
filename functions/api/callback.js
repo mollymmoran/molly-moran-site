@@ -23,7 +23,7 @@ export async function onRequest(context) {
   const tokenData = await tokenResponse.json();
 
   if (tokenData.error || !tokenData.access_token) {
-    return new Response(`Auth error: ${tokenData.error_description || tokenData.error || 'Unknown error'}`, { status: 400 });
+    return new Response(`Auth error: ${JSON.stringify(tokenData)}`, { status: 400 });
   }
 
   const token = tokenData.access_token;
