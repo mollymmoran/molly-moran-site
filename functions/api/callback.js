@@ -22,22 +22,35 @@ export async function onRequest(context) {
 
   const tokenData = await tokenResponse.json();
 
-  if (tokenData.error) {
-    return new Response(`OAuth error: ${tokenData.error_description}`, { status: 400 });
+  if (tokenData.error || !tokenData.access_token) {
+    return new Response(`Auth error: ${tokenData.error_description || tokenData.error || 'Unknown error'}`, { status: 400 });
   }
 
-  const data = { token: tokenData.access_token, provider: 'github' };
+  const token = tokenData.access_token;
+  const provider = 'github';
+  const message = `authorization:${provider}:success:${JSON.stringify({ token, provider })}`;
+
   const content = `<!DOCTYPE html>
 <html><body>
 <script>
-var data = ${JSON.stringify(data)};
-window.opener.postMessage(
-  'authorization:' + data.provider + ':success:' + JSON.stringify(data),
-  '*'
-);
-window.close();
+(function() {
+  var message = ${JSON.stringify(message)};
+  function sendMessage() {
+    if (window.opener) {
+      window.opener.postMessage(message, '*');
+      setTimeout(function() { window.close(); }, 500);
+    } else {
+      document.body.innerHTML = '<p>Authentication failed: no opener window. Please close this and try again.</p>';
+    }
+  }
+  if (document.readyState === 'complete') {
+    sendMessage();
+  } else {
+    window.addEventListener('load', sendMessage);
+  }
+})();
 <\/script>
-<p>Authenticating...</p>
+<p>Authenticating, please wait...</p>
 </body></html>`;
 
   return new Response(content, {
