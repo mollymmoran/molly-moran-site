@@ -28,7 +28,7 @@ export async function onRequest(context) {
 
   const token = tokenData.access_token;
   const provider = 'github';
-  const message = `authorization:${provider}:success:${JSON.stringify({ token, provider })}`;
+  const successMessage = `authorization:${provider}:success:${JSON.stringify({ token, provider })}`;
 
   const content = `<!DOCTYPE html>
 <html>
@@ -37,29 +37,30 @@ export async function onRequest(context) {
 <p>Completing authentication, please wait...</p>
 <script>
 (function() {
-  var message = ${JSON.stringify(message)};
-  var attempts = 0;
-  var maxAttempts = 20;
+  var provider = 'github';
+  var successMessage = ${JSON.stringify(successMessage)};
 
-  function tryPostMessage() {
-    attempts++;
-    if (window.opener && !window.opener.closed) {
-      try {
-        window.opener.postMessage(message, '*');
-        setTimeout(function() { window.close(); }, 500);
-        return;
-      } catch(e) {
-        document.body.innerHTML = '<p>Error: ' + e.message + '</p>';
-      }
+  // Step 2: when Decap CMS acknowledges, send the token back
+  window.addEventListener('message', function(e) {
+    if (e.data === 'authorizing:' + provider) {
+      window.opener.postMessage(successMessage, '*');
+      setTimeout(function() { window.close(); }, 500);
     }
-    if (attempts < maxAttempts) {
-      setTimeout(tryPostMessage, 200);
-    } else {
-      document.body.innerHTML = '<p>Could not reach the admin window. Please close this tab and try again.</p>';
+  });
+
+  // Step 1: announce to Decap CMS that we're ready
+  var attempts = 0;
+  function announce() {
+    if (window.opener && !window.opener.closed) {
+      window.opener.postMessage('authorizing:' + provider, '*');
+      attempts++;
+      if (attempts < 30) {
+        setTimeout(announce, 200);
+      }
     }
   }
 
-  tryPostMessage();
+  announce();
 })();
 <\/script>
 </body>
