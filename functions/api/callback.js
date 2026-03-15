@@ -31,27 +31,39 @@ export async function onRequest(context) {
   const message = `authorization:${provider}:success:${JSON.stringify({ token, provider })}`;
 
   const content = `<!DOCTYPE html>
-<html><body>
+<html>
+<head><title>Authenticating...</title></head>
+<body>
+<p>Completing authentication, please wait...</p>
 <script>
 (function() {
   var message = ${JSON.stringify(message)};
-  function sendMessage() {
-    if (window.opener) {
-      window.opener.postMessage(message, '*');
-      setTimeout(function() { window.close(); }, 500);
+  var attempts = 0;
+  var maxAttempts = 20;
+
+  function tryPostMessage() {
+    attempts++;
+    if (window.opener && !window.opener.closed) {
+      try {
+        window.opener.postMessage(message, '*');
+        setTimeout(function() { window.close(); }, 500);
+        return;
+      } catch(e) {
+        document.body.innerHTML = '<p>Error: ' + e.message + '</p>';
+      }
+    }
+    if (attempts < maxAttempts) {
+      setTimeout(tryPostMessage, 200);
     } else {
-      document.body.innerHTML = '<p>Authentication failed: no opener window. Please close this and try again.</p>';
+      document.body.innerHTML = '<p>Could not reach the admin window. Please close this tab and try again.</p>';
     }
   }
-  if (document.readyState === 'complete') {
-    sendMessage();
-  } else {
-    window.addEventListener('load', sendMessage);
-  }
+
+  tryPostMessage();
 })();
 <\/script>
-<p>Authenticating, please wait...</p>
-</body></html>`;
+</body>
+</html>`;
 
   return new Response(content, {
     headers: { 'Content-Type': 'text/html' },
