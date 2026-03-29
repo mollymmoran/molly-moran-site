@@ -7,7 +7,7 @@ cover_image: /images/diningroom_header.jpg
 ---
 I love our first home. It checks all the practical boxes — three bedrooms, two bathrooms, a finished basement, a garage, a flat backyard (which can feel like winning the Kentucky real estate lottery), and beautiful natural light. When touring the house for the first time we could instantly see its potential and knew it was the right house for us - we are so happy to call it ours.
 
-![My husband and I on closing day](/images/closing.jpeg)
+![](/images/closing.jpeg "My husband and I on closing day")
 
 It was built in the 1950s, but aside from the charming front door, there aren’t many obvious nods to mid-century design. Which honestly? I’m not mad about. It’s a blank slate. And blank slates are basically invitations. I’m so excited to make it feel like home for us.
 
@@ -25,7 +25,7 @@ If I’m going to live in a room this much, it might as well feel special.
 
 I like to approach renovations room by room. Breaking it down into manageable projects keeps it from feeling overwhelming (and keeps our budget from spontaneously combusting). Small, strategic upgrades over time add up.
 
-![Handmade Christmas cards](/images/cards.jpeg)
+![](/images/cards.jpeg "Handmade Christmas cards")
 
 
 
