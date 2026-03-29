@@ -40,11 +40,11 @@
     header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 10px solid var(--dusk); overflow: visible; }
     header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 4px; background: var(--dusk); z-index: 99; }
     header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 26px; background: var(--chartreuse); z-index: 99; }
-    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 83px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
-    .logo-icon { width: 90px; height: 90px; object-fit: contain; }
+    .logo-icon { width: 68px; height: 68px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
-    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
+    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sunburn); margin-top: 3px; }
     nav { display: flex; align-items: center; gap: 40px; }
     nav a { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--amber); font-weight: 500; position: relative; padding-bottom: 3px; transition: color 0.2s; cursor: pointer; }
@@ -130,10 +130,10 @@
     .shop-card-desc { font-size: 13px; line-height: 1.75; color: #666; }
 
     /* POST PAGE */
-    .post-header-bar { background: var(--crimson); padding: 40px 40px 35px; text-align: center; border-top: 5px solid var(--sunburn); border-bottom: 5px solid var(--sunburn); }
-    .post-byline { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--beige); margin-bottom: 20px; }
+    .post-header-bar { background: var(--crimson); padding: 20px 40px; text-align: center; border-top: 5px solid var(--sunburn); }
+    .post-byline { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--beige); margin-bottom: 10px; }
     .post-byline span { color: var(--beige); }
-    .post-header-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 58px); font-weight: 400; color: var(--beige); line-height: 1.1; max-width: 760px; margin: 0 auto 30px; }
+    .post-header-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 4vw, 42px); font-weight: 400; color: var(--beige); line-height: 1.1; max-width: 760px; margin: 0 auto 10px; }
     .post-hero-img { max-width: 860px; margin: 0 auto; padding: 0 40px; transform: translateY(40px); }
     .post-hero-img img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
     .post-hero-placeholder { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--fresh-linen) 0%, var(--macadamia) 100%); display: flex; align-items: center; justify-content: center; }
@@ -171,7 +171,7 @@
       .blog-grid, .loading-grid { grid-template-columns: 1fr 1fr; padding: 0 20px 60px; gap: 28px; }
       .post-card.featured { grid-template-columns: 1fr; gap: 24px; }
       .post-card.featured .post-title { font-size: 28px; }
-      .section-header { padding: 20px; }
+      .section-header { padding: 55px 20px 20px; }
       .about-content { grid-template-columns: 1fr; gap: 40px; padding: 40px 20px; }
       .shop-grid { grid-template-columns: 1fr 1fr; padding: 40px 20px 60px; }
     }
