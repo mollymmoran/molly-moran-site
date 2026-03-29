@@ -27,8 +27,6 @@ I like to approach renovations room by room. Breaking it down into manageable pr
 
 ![](/images/cards.jpeg "Dining table being put to use for making Christmas cards")
 
-
-
 ### **Goals: Traditional Design & Functional**
 
 Here’s the vision:
@@ -45,14 +43,13 @@ I want this room to feel . . . like a hug! Cozy, welcoming, and perhaps slightly
 
 Built-in bookshelves/cabinets will (hopefully) solve two problems: storage and styling. I want a place to tuck away the not-so-pretty things and display the pretty ones — serving ware, collected pieces, maybe a few thrifted finds that look far more expensive than they were.
 
-
 ### **The Project List**
 
 **Here’s what’s on deck:**
 
 * Remove carpet, tack strips, and approximately 4,000 hidden staples ( & pray that the hardwood floors underneath are in good condition)
 * Add trim to the cased openings 
-* Built floor to ceiling built in bookshelves,cabinets flanking the large window (craft storage yay!)
+* Built floor to ceiling built in bookshelves, cabinets flanking the large window (craft storage yay!)
 * Replace baseboards and add shoe molding
 * Add crown molding
 * Wallpaper?!
@@ -61,7 +58,6 @@ Built-in bookshelves/cabinets will (hopefully) solve two problems: storage and s
 * Furnish and decorate
 
 Nothing too wild. Just...everything!
-
 
 The dining room has a long way to go and I have much to learn. There will inevitably be mistakes along the way, but design is often less about perfection and more about perspective.
 
