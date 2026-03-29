@@ -1,6 +1,6 @@
 ---
 title: "Dining Room: The Plan"
-date: March 13, 2026
+date: March 29, 2026
 category: My Home
 excerpt: First Post!
 cover_image: /images/diningroom_header.jpg
