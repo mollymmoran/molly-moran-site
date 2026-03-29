@@ -45,7 +45,7 @@ Built-in bookshelves/cabinets will (hopefully) solve two problems: storage and s
 
 ### **The Project List**
 
-**Here’s what’s on deck:**
+Here’s what’s on deck:
 
 * Remove carpet, tack strips, and approximately 4,000 hidden staples ( & pray that the hardwood floors underneath are in good condition)
 * Add trim to the cased openings 
