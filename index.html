@@ -37,13 +37,14 @@
     .announce { background: var(--pine); color: var(--beige); text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
 
     /* HEADER */
-    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 3px solid var(--dusk); overflow: visible; }
-    header::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 3px; background: var(--chartreuse); z-index: 99; }
+    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 31px solid var(--dusk); overflow: visible; }
+    header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 3px; background: var(--dusk); z-index: 99; }
+    header::after { content: ''; position: absolute; top: calc(100% + 3px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 90px; height: 90px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
-    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
+    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sunburn); margin-top: 3px; }
     nav { display: flex; align-items: center; gap: 40px; }
     nav a { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--amber); font-weight: 500; position: relative; padding-bottom: 3px; transition: color 0.2s; cursor: pointer; }
@@ -77,7 +78,7 @@
     .post-card:hover .post-title { color: var(--beige); }
     .post-meta { font-size: 11px; color: var(--beige); letter-spacing: 0.08em; }
     .post-excerpt { font-size: 13px; line-height: 1.75; color: var(--beige); margin-top: 10px; }
-    .post-content { padding: 0 18px 20px; }
+    .post-content { padding: 0 18px 20px; background: var(--crimson); }
 
     /* FEATURED */
     .post-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-bottom: 0; border-bottom: 5px solid var(--crimson); margin-bottom: 10px; background: var(--toast); overflow: hidden; }
