@@ -38,7 +38,8 @@
 
     /* HEADER */
     header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 6px solid var(--dusk); overflow: visible; }
-    header::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
+    header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 4px; background: var(--dusk); z-index: 99; }
+    header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 90px; height: 90px; object-fit: contain; }
