@@ -7,7 +7,7 @@ cover_image: /images/diningroom_header.jpg
 ---
 I love our first home. It checks all the practical boxes — three bedrooms, two bathrooms, a finished basement, a garage, a flat backyard (which can feel like winning the Kentucky real estate lottery), and beautiful natural light. When touring the house for the first time we could instantly see its potential and knew it was the right house for us - we are so happy to call it ours.
 
-![](/images/closing.jpeg "My husband and I on closing day")
+![](/images/closing.jpeg "Closing day!")
 
 It was built in the 1950s, but aside from the charming front door, there aren’t many obvious nods to mid-century design. Which honestly? I’m not mad about. It’s a blank slate. And blank slates are basically invitations. I’m so excited to make it feel like home for us.
 
@@ -25,7 +25,7 @@ If I’m going to live in a room this much, it might as well feel special.
 
 I like to approach renovations room by room. Breaking it down into manageable projects keeps it from feeling overwhelming (and keeps our budget from spontaneously combusting). Small, strategic upgrades over time add up.
 
-![](/images/cards.jpeg "Handmade Christmas cards")
+![](/images/cards.jpeg "Dining table being put to use for making Christmas cards")
 
 
 
@@ -39,14 +39,14 @@ Adding decorative trim and moldings can create that collected, traditional feel 
 
 **2. Color, Pattern & Texture**
 
-I want this room to feel…like a hug! Cozy, welcoming, and perhaps slightly dramatic? A rug, curtains, and paint or wallpaper will be the perfect elements to bring in color and pattern.
+I want this room to feel . . . like a hug! Cozy, welcoming, and perhaps slightly dramatic? A rug, curtains, and paint or wallpaper will be the perfect elements to bring in color and pattern.
 
 **3. Smart Storage**
 
 Built-in bookshelves/cabinets will (hopefully) solve two problems: storage and styling. I want a place to tuck away the not-so-pretty things and display the pretty ones — serving ware, collected pieces, maybe a few thrifted finds that look far more expensive than they were.
 
 
-## **The Project List**
+### **The Project List**
 
 **Here’s what’s on deck:**
 
