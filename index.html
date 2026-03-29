@@ -39,7 +39,7 @@
     /* HEADER */
     header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 10px solid var(--dusk); overflow: visible; }
     header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 4px; background: var(--dusk); z-index: 99; }
-    header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
+    header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 26px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 90px; height: 90px; object-fit: contain; }
@@ -73,7 +73,7 @@
     .post-img-wrap { width: 100%; aspect-ratio: 4/3; overflow: hidden; background: var(--macadamia); margin-bottom: 18px; }
     .post-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
     .post-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--crimson); transition: transform 0.5s ease; }
-    .post-tag { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--pine); margin-bottom: 8px; font-weight: 600; background: var(--beige); display: inline-block; padding: 3px 8px; }
+    .post-tag { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--pine); margin-bottom: 8px; font-weight: 600; background: var(--meadow); display: inline-block; padding: 3px 8px; }
     .post-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; line-height: 1.3; color: var(--beige); margin-bottom: 10px; transition: color 0.2s; }
     .post-card:hover .post-title { color: var(--beige); }
     .post-meta { font-size: 11px; color: var(--beige); letter-spacing: 0.08em; }
@@ -100,7 +100,7 @@
     @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
     /* ABOUT */
-    .about-hero { background: var(--crimson); padding: 40px 40px 35px; text-align: center; }
+    .about-hero { background: var(--crimson); padding: 40px 40px 35px; text-align: center; width: 100%; border-top: 5px solid var(--sunburn); border-bottom: 5px solid var(--sunburn); }
     .about-hero h2 { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; color: var(--beige); letter-spacing: 0.04em; }
     .about-hero h2 em { color: var(--meadow); font-style: italic; }
     .about-content { max-width: 900px; margin: 0 auto; padding: 70px 40px; display: grid; grid-template-columns: 320px 1fr; gap: 70px; align-items: start; }
