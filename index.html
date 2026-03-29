@@ -37,14 +37,13 @@
     .announce { background: var(--pine); color: var(--beige); text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
 
     /* HEADER */
-    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 62px solid var(--dusk); overflow: visible; }
-    header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 6px; background: var(--dusk); z-index: 99; }
-    header::after { content: ''; position: absolute; top: calc(100% + 6px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
+    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 6px solid var(--dusk); overflow: visible; }
+    header::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 90px; height: 90px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
-    .logo-text .name { font-family: 'Pinyon Script', cursive; font-size: 36px; font-weight: 400; color: var(--crimson); letter-spacing: 0.05em; }
+    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sunburn); margin-top: 3px; }
     nav { display: flex; align-items: center; gap: 40px; }
     nav a { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--amber); font-weight: 500; position: relative; padding-bottom: 3px; transition: color 0.2s; cursor: pointer; }
@@ -152,7 +151,7 @@
     .back-link:hover { color: var(--sunflower); }
 
     /* FOOTER */
-    footer { background: var(--pine); padding: 60px 40px 40px; text-align: center; border-top: 3px solid var(--dusk); }
+    footer { background: var(--pine); padding: 60px 40px 40px; text-align: center; border-top: 62px solid var(--dusk); }
     .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--beige); letter-spacing: 0.1em; margin-bottom: 6px; }
     .footer-links { display: flex; justify-content: center; gap: 36px; margin-bottom: 36px; }
     .footer-links a { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--beige); text-decoration: none; cursor: pointer; transition: color 0.2s; }
