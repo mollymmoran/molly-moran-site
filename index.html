@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Molly Moran Design</title>
   <script src="https://unpkg.com/marked@4.3.0/marked.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -37,14 +37,14 @@
     .announce { background: var(--pine); color: var(--beige); text-align: center; padding: 9px 20px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
 
     /* HEADER */
-    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 31px solid var(--dusk); overflow: visible; }
-    header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 3px; background: var(--dusk); z-index: 99; }
-    header::after { content: ''; position: absolute; top: calc(100% + 3px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
+    header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 62px solid var(--dusk); overflow: visible; }
+    header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 6px; background: var(--dusk); z-index: 99; }
+    header::after { content: ''; position: absolute; top: calc(100% + 6px); left: 0; right: 0; height: 31px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 110px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 90px; height: 90px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
-    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
+    .logo-text .name { font-family: 'Pinyon Script', cursive; font-size: 36px; font-weight: 400; color: var(--crimson); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sunburn); margin-top: 3px; }
     nav { display: flex; align-items: center; gap: 40px; }
     nav a { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--amber); font-weight: 500; position: relative; padding-bottom: 3px; transition: color 0.2s; cursor: pointer; }
@@ -63,7 +63,7 @@
 
     /* BLOG GRID */
     .blog-grid { max-width: 1200px; margin: 0 auto; padding: 0 40px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
-    .post-card { text-decoration: none; color: inherit; display: block; cursor: pointer; animation: fadeUp 0.5s ease both; background: var(--toast); }
+    .post-card { text-decoration: none; color: inherit; display: block; cursor: pointer; animation: fadeUp 0.5s ease both; background: var(--crimson); }
     .post-card:nth-child(2) { animation-delay: .06s; }
     .post-card:nth-child(3) { animation-delay: .12s; }
     .post-card:nth-child(4) { animation-delay: .18s; }
@@ -72,7 +72,7 @@
     .post-card:hover .post-img-wrap img, .post-card:hover .post-img-placeholder { transform: scale(1.03); }
     .post-img-wrap { width: 100%; aspect-ratio: 4/3; overflow: hidden; background: var(--macadamia); margin-bottom: 18px; }
     .post-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
-    .post-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--macadamia) 0%, var(--toast) 100%); transition: transform 0.5s ease; }
+    .post-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--crimson); transition: transform 0.5s ease; }
     .post-tag { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--beige); margin-bottom: 8px; font-weight: 600; background: rgba(174,126,93,0.12); display: inline-block; padding: 3px 8px; }
     .post-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; line-height: 1.3; color: var(--beige); margin-bottom: 10px; transition: color 0.2s; }
     .post-card:hover .post-title { color: var(--beige); }
@@ -81,7 +81,7 @@
     .post-content { padding: 0 18px 20px; background: var(--crimson); }
 
     /* FEATURED */
-    .post-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-bottom: 0; border-bottom: 5px solid var(--crimson); margin-bottom: 10px; background: var(--toast); overflow: hidden; }
+    .post-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-bottom: 0; margin-bottom: 10px; background: var(--crimson); overflow: hidden; }
     .post-card.featured .post-img-wrap { aspect-ratio: 16/10; margin-bottom: 0; }
     .post-card.featured .post-title { font-size: 50px; line-height: 1.15; }
     .post-card.featured .post-excerpt { font-size: 14px; margin-top: 14px; }
