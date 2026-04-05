@@ -54,7 +54,7 @@ Here’s what’s on deck:
 * Add crown molding
 * Wallpaper?!
 * Replace the chandelier
-* Replace blinded and add curtains
+* Replace the blinds and add curtains
 * Furnish and decorate
 
 Nothing too wild. Just...everything!
