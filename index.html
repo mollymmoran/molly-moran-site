@@ -63,7 +63,7 @@
 
     /* BLOG GRID */
     .blog-grid { max-width: 1200px; margin: 0 auto; padding: 0 40px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
-    .post-card { text-decoration: none; color: inherit; display: block; cursor: pointer; animation: fadeUp 0.5s ease both; background: var(--crimson); }
+    .post-card { text-decoration: none; color: inherit; display: block; cursor: pointer; animation: fadeUp 0.5s ease both; background: var(--pine); }
     .post-card:nth-child(2) { animation-delay: .06s; }
     .post-card:nth-child(3) { animation-delay: .12s; }
     .post-card:nth-child(4) { animation-delay: .18s; }
@@ -134,10 +134,10 @@
     .post-byline { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--beige); margin-bottom: 10px; }
     .post-byline span { color: var(--beige); }
     .post-header-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 4vw, 42px); font-weight: 400; color: var(--beige); line-height: 1.1; max-width: 760px; margin: 0 auto 10px; }
-    .post-hero-img { max-width: 860px; margin: 0 auto; padding: 0 40px; transform: translateY(40px); }
+    .post-hero-img { max-width: 860px; margin: 0 auto; padding: 0 40px; }
     .post-hero-img img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
     .post-hero-placeholder { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--fresh-linen) 0%, var(--macadamia) 100%); display: flex; align-items: center; justify-content: center; }
-    .post-body { max-width: 720px; margin: 0 auto; padding: 80px 40px; }
+    .post-body { max-width: 720px; margin: 0 auto; padding: 40px 40px 80px; }
     .post-body p { font-size: 16px; line-height: 1.95; color: #333; margin-bottom: 24px; }
     .post-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; color: var(--amber); margin: 44px 0 18px; border-left: 4px solid var(--sunflower); padding-left: 16px; }
     .post-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--sunburn); margin: 32px 0 14px; }
@@ -147,7 +147,7 @@
     .post-body li { font-size: 16px; line-height: 1.9; color: #333; margin-bottom: 6px; }
     .post-body strong { font-weight: 600; color: var(--amber); }
     .post-body a { color: var(--sunburn); text-decoration: underline; }
-    .post-body img { width: 100%; margin: 32px 0; display: block; }
+    .post-body img { width: 100%; max-width: 100%; height: auto; margin: 32px 0; display: block; }
     .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--crimson); text-decoration: none; margin-bottom: 40px; cursor: pointer; transition: color 0.2s; border: none; background: none; font-family: 'Raleway', sans-serif; font-weight: 300; }
     .back-link:hover { color: var(--sunflower); }
 
@@ -308,7 +308,7 @@ function parseFrontmatter(text) {
 
 // ─── LOAD POSTS ─────────────────────────────────────────────────
 // List of post files — add new filenames here when you publish
-const POST_FILES = ['posts/2026-04-23-designer-spotlight.md','posts/2026-03-13-dining-room-plans.md'];
+const POST_FILES = ['posts/2026-03-13-dining-room-plans.md','posts/2026-04-23-designer-spotlight.md'];
 
 async function loadPosts() {
   const posts = [];
