@@ -39,7 +39,7 @@
     /* HEADER */
     header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 10px solid var(--dusk); overflow: visible; }
     header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 4px; background: var(--dusk); z-index: 99; }
-    header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 26px; background: var(--chartreuse); z-index: 99; }
+    header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 13px; background: var(--chartreuse); z-index: 99; }
     .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 83px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
     .logo-icon { width: 68px; height: 68px; object-fit: contain; }
@@ -81,7 +81,7 @@
     .post-content { padding: 0 18px 20px; background: var(--crimson); }
 
     /* FEATURED */
-    .post-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-bottom: 0; margin-bottom: 10px; background: var(--crimson); overflow: hidden; }
+    .post-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding-bottom: 0; margin-bottom: 10px; background: var(--pine); overflow: hidden; }
     .post-card.featured .post-img-wrap { aspect-ratio: 16/10; margin-bottom: 0; }
     .post-card.featured .post-title { font-size: 50px; line-height: 1.15; }
     .post-card.featured .post-excerpt { font-size: 14px; margin-top: 14px; }
@@ -109,7 +109,7 @@
     .about-photo-placeholder { width: 100%; aspect-ratio: 3/4; background: linear-gradient(160deg, var(--fresh-linen) 0%, var(--macadamia) 100%); display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
     .about-text h3 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 400; margin-bottom: 20px; color: var(--amber); }
     .about-text p { font-size: 15px; line-height: 1.9; color: #444; margin-bottom: 18px; }
-    .about-signature { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-style: italic; color: var(--sunburn); margin-top: 30px; }
+    .about-signature { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-style: italic; color: var(--pine); margin-top: 30px; }
 
     /* SHOP */
     .shop-hero { background: var(--sunburn); padding: 80px 40px; text-align: center; }
