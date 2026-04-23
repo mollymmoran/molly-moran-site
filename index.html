@@ -40,11 +40,11 @@
     header { position: sticky; top: 0; z-index: 100; background: var(--meadow); border-bottom: 10px solid var(--dusk); overflow: visible; }
     header::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 4px; background: var(--dusk); z-index: 99; }
     header::after { content: ''; position: absolute; top: calc(100% + 4px); left: 0; right: 0; height: 13px; background: var(--chartreuse); z-index: 99; }
-    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 83px; display: flex; align-items: center; justify-content: space-between; }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 62px; display: flex; align-items: center; justify-content: space-between; }
     .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; cursor: pointer; }
-    .logo-icon { width: 68px; height: 68px; object-fit: contain; }
+    .logo-icon { width: 51px; height: 51px; object-fit: contain; }
     .logo-text { display: flex; flex-direction: column; line-height: 1; }
-    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
+    .logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--crimson); letter-spacing: 0.05em; }
     .logo-text .sub { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sunburn); margin-top: 3px; }
     nav { display: flex; align-items: center; gap: 40px; }
     nav a { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; color: var(--amber); font-weight: 500; position: relative; padding-bottom: 3px; transition: color 0.2s; cursor: pointer; }
@@ -308,7 +308,7 @@ function parseFrontmatter(text) {
 
 // ─── LOAD POSTS ─────────────────────────────────────────────────
 // List of post files — add new filenames here when you publish
-const POST_FILES = ['posts/2026-03-13-dining-room-plans.md','posts/2026-04-23-designer-spotlight.md'];
+const POST_FILES = ['posts/2026-03-13-dining-room-plans.md'];
 
 async function loadPosts() {
   const posts = [];
