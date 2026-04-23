@@ -11,7 +11,7 @@ For years I've scoured the internet for designers who inspire, motivate, and —
 
 ## Jean Stoffer
 
-## *Interior Designer and founder of Jean Stoffer Design* Grand Rapids, MI | "Stoffer Home" on YouTube · jeanstofferdesign.com
+### *Interior Designer and founder of Jean Stoffer Design* Grand Rapids, MI | "Stoffer Home" on YouTube · jeanstofferdesign.com
 
 I absolutely adore Jean and what her team creates at Jean Stoffer Design. Based in Grand Rapids, Michigan, they specialize in classic home design with an excellent eye for space planning — prioritizing function while keeping everything timeless, elegant, and comfortable. Jean first made her name with her kitchens, which frequently reference historic English design, before expanding into whole-home interiors. Her cabinetry work is what sparked my love of inset doors — where cabinet doors sit flush with the face frame — and I'm equally obsessed with her use of range alcoves and creative alternatives to standard kitchen corner cabinetry.
 
@@ -23,7 +23,7 @@ Jean's warm personality shines through in the Magnolia Network series *The Estab
 
 ## Julia Marcum
 
-## *Home renovation content creator and blogger, "Chris Loves Julia"* Raleigh, NC | Instagram @chrislovesjulia · chrislovesjulia.com
+### *Home renovation content creator and blogger, "Chris Loves Julia"* Raleigh, NC | Instagram @chrislovesjulia · chrislovesjulia.com
 
 Julia and Chris share their renovation journeys, DIY projects, interior inspiration, and recipes on their blog — and Julia's style is moody, modern, and traditional all at once, pulled off with impressive sophistication. She has wonderful taste and she really commits to it, layering charm into every room she touches. *Chris Loves Julia* was the first blog I ever followed, so it holds a special place for me. While Julia is active on Instagram, I prefer her blog posts for the in-depth look at her thought process and the honest account of trials and errors along the way.
 
@@ -35,7 +35,7 @@ Beyond the design inspiration, she also offers genuinely practical advice — ho
 
 ## Caroline Winkler
 
-## *YouTube home design content creator* Washington, DC | YouTube @Caroline_Winkler
+### *YouTube home design content creator* Washington, DC | YouTube @Caroline_Winkler
 
 If you're after practical tips, real-life renovation footage, and witty (sometimes chaotic) commentary, Caroline's channel is a must. Her design style leans into rich color palettes, layered patterns, and vintage pieces — used with confidence. She's currently decorating her 1908 Victorian townhouse in Washington, DC, with her rescue cat Whitley by her side. Her other videos cover everything from decluttering and budget-friendly makeovers to renter-friendly ideas and which design rules are worth breaking.
 
