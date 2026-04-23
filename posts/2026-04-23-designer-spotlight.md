@@ -3,6 +3,7 @@ title: Designer Spotlight
 date: April 23, 2026
 category: Design Inspiration
 excerpt: My Favorite Interior Designers to Follow Right Now
+cover_image: /images/header-photo-this-one.png
 ---
 For years I've scoured the internet for designers who inspire, motivate, and — let's be honest — entertain me. Whether through social media, blogs, design books, or YouTube, the designers I follow have shaped my own sense of style in a real way. I've gathered a few favorites to share here, hoping they can do the same for you. Finding designers whose work truly resonates with you is one of the best ways to start narrowing down your aesthetic and figure out what direction you want to take your home.
 
