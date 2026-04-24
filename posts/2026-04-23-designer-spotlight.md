@@ -7,6 +7,8 @@ cover_image: /images/header-photo-this-one.png
 ---
 For years I've scoured the internet for designers who inspire, motivate, and — let's be honest — entertain me. Whether through social media, blogs, design books, or YouTube, the designers I follow have shaped my own sense of style in a real way. I've gathered a few favorites to share here, hoping they can do the same for you. Finding designers whose work truly resonates with you is one of the best ways to start narrowing down your aesthetic and figure out what direction you want to take your home.
 
+
+
 ![](/images/jean-stoffer.jpg)
 
 ## Jean Stoffer
@@ -19,6 +21,10 @@ Jean's warm personality shines through in the Magnolia Network series *The Estab
 
 [New to Jean's work? Start with this 1930s English Tudor Renovation full house video tour.](https://youtu.be/JKWe83r38t8?si=m_iL1Z4Uq7BN_fGJ)
 
+
+
+
+
 ![](/images/julia-marcum.jpg)
 
 ## Julia Marcum
@@ -30,6 +36,10 @@ Julia and Chris share their renovation journeys, DIY projects, interior inspirat
 Beyond the design inspiration, she also offers genuinely practical advice — how to choose the right rug size, tips for shopping secondhand and Facebook Marketplace, even product testing on steam mops. Most of all, you can sense how much Julia loves *home* — not just the space itself, but the feeling it creates and the memories made there. That's something worth appreciating.
 
 [Looking to lighten up you space for spring? Julia has the best tips!](https://chrislovesjulia.com/7-ways-to-lighten-up-your-home-for-spring/)
+
+
+
+
 
 ![](/images/caroline-winkler.webp)
 
