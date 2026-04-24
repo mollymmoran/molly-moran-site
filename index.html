@@ -85,6 +85,10 @@
     .post-card.featured .post-img-wrap { aspect-ratio: 16/10; margin-bottom: 0; }
     .post-card.featured .post-title { font-size: 50px; line-height: 1.15; }
     .post-card.featured .post-excerpt { font-size: 14px; margin-top: 14px; }
+    .post-card:not(.featured) { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; overflow: hidden; }
+    .post-card:not(.featured) .post-img-wrap { aspect-ratio: 16/10; margin-bottom: 0; }
+    .post-card:not(.featured) .post-title { font-size: 50px; line-height: 1.15; }
+    .post-card:not(.featured) .post-excerpt { font-size: 14px; margin-top: 14px; }
     .read-more { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--crimson); background: var(--dusk); font-weight: 500; padding: 8px 16px; }
 
     /* LOADING */
@@ -308,7 +312,7 @@ function parseFrontmatter(text) {
 
 // ─── LOAD POSTS ─────────────────────────────────────────────────
 // List of post files — add new filenames here when you publish
-const POST_FILES = ['posts/2026-03-13-dining-room-plans.md', 'posts/2026-04-23-designer-spotlight.md'];
+const POST_FILES = ['posts/2026-04-23-designer-spotlight.md', 'posts/2026-03-13-dining-room-plans.md'];
 
 async function loadPosts() {
   const posts = [];
