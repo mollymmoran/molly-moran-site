@@ -382,13 +382,24 @@ function openPost(index) {
     heroWrap.innerHTML = `<div class="post-hero-placeholder"><svg width="70" height="70" viewBox="0 0 60 60" fill="none"><rect x="8" y="16" width="44" height="32" rx="2" stroke="#b5a96a" stroke-width="1.5"/><path d="M8 26 L20 20 L30 28 L42 18 L52 26" stroke="#b5a96a" stroke-width="1.2" fill="none"/><circle cx="18" cy="22" r="3" stroke="#b5a96a" stroke-width="1.2"/></svg></div>`;
   }
   // Render markdown body
-  if (window.marked) {
-    document.getElementById('post-body-content').innerHTML = marked.parse(post.content);
-  } else {
-    document.getElementById('post-body-content').innerHTML = post.content
-      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="width:100%;max-width:100%;height:auto;margin:32px 0;display:block;">')
+  const bodyEl = document.getElementById('post-body-content');
+  try {
+    bodyEl.innerHTML = window.marked ? marked.parse(post.content) : post.content
+      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">')
+      .replace(/\n/g, '<br>');
+  } catch(e) {
+    bodyEl.innerHTML = post.content
+      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">')
       .replace(/\n/g, '<br>');
   }
+  // Force all images in post body to display correctly
+  bodyEl.querySelectorAll('img').forEach(img => {
+    img.style.width = '100%';
+    img.style.maxWidth = '100%';
+    img.style.height = 'auto';
+    img.style.display = 'block';
+    img.style.margin = '32px 0';
+  });
 }
 
 window.addEventListener('popstate', () => { showPage('home'); });
