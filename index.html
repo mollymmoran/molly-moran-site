@@ -339,7 +339,7 @@ function renderGrid(posts) {
     const imgHtml = post.cover_image
       ? `<div class="post-img-wrap"><img src="${post.cover_image}" alt="${post.title}"/></div>`
       : `<div class="post-img-wrap"><div class="post-img-placeholder"><svg width="48" height="48" viewBox="0 0 60 60" fill="none"><rect x="8" y="16" width="44" height="32" rx="2" stroke="#b5a96a" stroke-width="1.5"/><path d="M8 26 L20 20 L30 28 L42 18 L52 26" stroke="#b5a96a" stroke-width="1.2" fill="none"/><circle cx="18" cy="22" r="3" stroke="#b5a96a" stroke-width="1.2"/></svg></div></div>`;
-    const readMore = featured ? `<span class="read-more">Read More →</span>` : '';
+    const readMore = `<span class="read-more">Read More →</span>`;
     return `
       <div class="post-card${featured ? ' featured' : ''}" onclick="openPost(${i})" style="animation-delay:${i * 0.06}s">
         ${imgHtml}
