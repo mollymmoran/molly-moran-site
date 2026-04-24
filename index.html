@@ -337,7 +337,7 @@ function renderGrid(posts) {
   grid.innerHTML = posts.map((post, i) => {
     const featured = i === 0;
     const imgHtml = post.cover_image
-      ? `<div class="post-img-wrap"><img src="${post.cover_image}" alt="${post.title}" loading="lazy"/></div>`
+      ? `<div class="post-img-wrap"><img src="${post.cover_image}" alt="${post.title}"/></div>`
       : `<div class="post-img-wrap"><div class="post-img-placeholder"><svg width="48" height="48" viewBox="0 0 60 60" fill="none"><rect x="8" y="16" width="44" height="32" rx="2" stroke="#b5a96a" stroke-width="1.5"/><path d="M8 26 L20 20 L30 28 L42 18 L52 26" stroke="#b5a96a" stroke-width="1.2" fill="none"/><circle cx="18" cy="22" r="3" stroke="#b5a96a" stroke-width="1.2"/></svg></div></div>`;
     const readMore = featured ? `<span class="read-more">Read More →</span>` : '';
     return `
@@ -378,7 +378,9 @@ function openPost(index) {
   if (window.marked) {
     document.getElementById('post-body-content').innerHTML = marked.parse(post.content);
   } else {
-    document.getElementById('post-body-content').innerHTML = post.content.replace(/\n/g, '<br>');
+    document.getElementById('post-body-content').innerHTML = post.content
+      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="width:100%;max-width:100%;height:auto;margin:32px 0;display:block;">')
+      .replace(/\n/g, '<br>');
   }
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
