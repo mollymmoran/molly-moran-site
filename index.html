@@ -367,6 +367,13 @@ function openPost(index) {
   if (!post) return;
   document.getElementById('post-title').textContent = post.title;
   document.getElementById('post-date').textContent = post.date;
+  // Show page first so images load in a visible element
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById('page-post').classList.add('active');
+  document.getElementById('nav-home').classList.add('active');
+  history.pushState({ page: 'post' }, '');
+  window.scrollTo(0, 0);
   // Hero image
   const heroWrap = document.getElementById('post-hero-wrap');
   if (post.cover_image) {
@@ -382,12 +389,6 @@ function openPost(index) {
       .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="width:100%;max-width:100%;height:auto;margin:32px 0;display:block;">')
       .replace(/\n/g, '<br>');
   }
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-  document.getElementById('page-post').classList.add('active');
-  document.getElementById('nav-home').classList.add('active');
-  history.pushState({ page: 'post' }, '');
-  window.scrollTo(0, 0);
 }
 
 window.addEventListener('popstate', () => { showPage('home'); });
