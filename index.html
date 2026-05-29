@@ -392,7 +392,7 @@ function openPost(index) {
   window.scrollTo(0, 0);
   // Hero image
   const heroWrap = document.getElementById('post-hero-wrap');
-  if (post.cover_image) {
+  if (post.cover_image && post.hide_cover !== 'true') {
     heroWrap.innerHTML = `<img src="${post.cover_image}" alt="${post.title}" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover"/>`;
   } else {
     heroWrap.innerHTML = '';

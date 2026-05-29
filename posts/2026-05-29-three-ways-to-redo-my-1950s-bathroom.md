@@ -3,6 +3,8 @@ title: Three Ways to Redo my 1950s Bathroom
 date: May 29, 2026
 category: My Home
 excerpt: An original bathroom, three mood boards and a poll to help me make up my mind.
+cover_image: /images/bathroom-ai-render.jpg
+hide_cover: true
 ---
 ![](/images/bathroom-original.jpeg)
 
