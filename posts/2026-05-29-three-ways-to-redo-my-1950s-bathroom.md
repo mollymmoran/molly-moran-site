@@ -3,9 +3,9 @@ title: Three Ways to Redo my 1950s Bathroom
 date: May 29, 2026
 category: My Home
 excerpt: An original bathroom, three mood boards and a poll to help me make up my mind.
-cover_image: /images/ai-bathroom-render.jpg
+cover_image: /images/bathroom-ai-render.jpg
 ---
-![](/images/original-bathroom.jpeg)
+![](/images/bathroom-original.jpeg)
 
 Our bathroom was built in 1957, and it shows — in the best and most stubborn way possible. The peachy-pink color, small mosaic-style flooring, and half height tiled walls wrapping the room aren’t a design choice I made; they’re a design choice that was made for me, by postwar America’s unshakeable confidence in pastel ceramics. This isn’t the glossy, teak-and-geometric Mid-Century Modern you’d pin on a mood board — it’s something more honest than that: a practical, middle-class suburban bathroom built to last, which it has, infuriatingly and impressively, for nearly seven decades. It has held up well but is not my style, which is why I’ve spent an embarrassing amount of time lately creating mood boards wondering what comes next.
 
@@ -14,7 +14,7 @@ Small footprint, big potential — or at least that’s what I keep telling myse
 
 
 
-![](/images/option-1-moodboard.jpeg)
+![](/images/bathroom-option-1.jpeg)
 
 ## Mood Board 1
 
@@ -23,7 +23,7 @@ This one is quiet, simple, and just a little bit moody. A dark olive green vanit
 
 
 
-![](/images/option-2-moodboard.jpeg)
+![](/images/bathroom-option-2.jpeg)
 
 ## Mood Board 2
 
@@ -32,7 +32,7 @@ This board commits to drama and earns it. A dark charcoal marble basketweave flo
 
 
 
-![](/images/option-3-mood-board.jpeg)
+![](/images/bathroom-option-3.jpeg)
 
 ## Mood Board 3
 
