@@ -407,7 +407,7 @@ function openPost(index) {
   // Hero image
   const heroWrap = document.getElementById('post-hero-wrap');
   if (post.cover_image && post.hide_cover !== 'true') {
-    heroWrap.innerHTML = `<img src="${post.cover_image}" alt="${post.title}" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover"/>`;
+    heroWrap.innerHTML = `<img src="${post.cover_image}" alt="${post.title}" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;cursor:zoom-in" onclick="document.getElementById('lightbox-img').src=this.src;document.getElementById('lightbox-img').alt=this.alt;document.getElementById('lightbox').classList.add('open')"/>`;
   } else {
     heroWrap.innerHTML = '';
   }
