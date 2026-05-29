@@ -41,3 +41,5 @@ If this bathroom had a personality, it would bring you flowers — literally. Th
 
 
 Three mood boards, one bathroom, and zero decisions made — welcome to the remodel planning phase, where the ideas are endless and the budget is hypothetical. I’ll be living with all three of these for a while before I commit and make a realistic plan, but in the meantime I want to hear from you. Which direction would you take it? Answer in the poll below!
+
+<div id="bathroom-poll"></div>

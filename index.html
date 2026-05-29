@@ -152,6 +152,24 @@
     .post-body strong { font-weight: 600; color: var(--amber); }
     .post-body a { color: var(--crimson); text-decoration: underline; }
     .post-body img { width: 100%; max-width: 100%; height: auto; margin: 32px 0; display: block; }
+
+    /* POLL */
+    .poll-wrap { margin: 48px 0 16px; border-top: 3px solid var(--dusk); padding-top: 36px; }
+    .poll-heading { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--crimson); margin-bottom: 8px; }
+    .poll-subheading { font-size: 13px; color: #666; margin-bottom: 28px; letter-spacing: 0.04em; }
+    .poll-options { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+    .poll-btn { background: var(--pine); color: var(--beige); border: none; padding: 14px 24px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; text-align: left; transition: background 0.2s; }
+    .poll-btn:hover { background: var(--crimson); }
+    .poll-btn.selected { background: var(--crimson); }
+    .poll-thanks { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--crimson); margin-bottom: 28px; font-style: italic; }
+    .poll-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .poll-table th { text-align: left; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: #999; padding: 0 0 10px; font-weight: 600; }
+    .poll-table td { padding: 10px 0; border-top: 1px solid var(--meadow); color: #333; vertical-align: middle; }
+    .poll-table td:last-child { text-align: right; color: var(--crimson); font-weight: 600; font-family: 'Raleway', sans-serif; font-size: 12px; }
+    .poll-bar-cell { width: 55%; padding-right: 16px !important; }
+    .poll-bar-bg { background: var(--meadow); height: 8px; border-radius: 4px; overflow: hidden; }
+    .poll-bar-fill { background: var(--crimson); height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+    .poll-total { font-size: 11px; color: #999; margin-top: 16px; letter-spacing: 0.05em; }
     .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--crimson); text-decoration: none; margin-bottom: 40px; cursor: pointer; transition: color 0.2s; border: none; background: none; font-family: 'Raleway', sans-serif; font-weight: 300; }
     .back-link:hover { color: var(--sunflower); }
 
@@ -398,11 +416,78 @@ function openPost(index) {
     img.style.display = 'block';
     img.style.margin = '32px 0';
   });
+  initPolls();
 }
 
 window.addEventListener('popstate', () => { showPage('home'); });
 
 init();
+
+// ─── POLL ────────────────────────────────────────────
+function renderPoll(el) {
+  const voted = localStorage.getItem('poll_bathroom');
+  if (voted) {
+    loadPollResults(el, parseInt(voted));
+  } else {
+    el.innerHTML = `
+      <div class="poll-wrap">
+        <div class="poll-heading">Cast Your Vote</div>
+        <div class="poll-subheading">Which direction would you take the bathroom?</div>
+        <div class="poll-options">
+          <button class="poll-btn" onclick="submitVote(1)">Mood Board 1 — Moody Olive &amp; Cream</button>
+          <button class="poll-btn" onclick="submitVote(2)">Mood Board 2 — Dark &amp; Dramatic Marble</button>
+          <button class="poll-btn" onclick="submitVote(3)">Mood Board 3 — Floral &amp; Cheerful</button>
+        </div>
+      </div>`;
+  }
+}
+
+async function submitVote(option) {
+  localStorage.setItem('poll_bathroom', option);
+  const el = document.getElementById('bathroom-poll');
+  if (!el) return;
+  try {
+    await fetch('/api/poll', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ option }),
+    });
+  } catch(e) {}
+  loadPollResults(el, option);
+}
+
+async function loadPollResults(el, voted) {
+  const labels = { 1: 'Mood Board 1 — Moody Olive & Cream', 2: 'Mood Board 2 — Dark & Dramatic Marble', 3: 'Mood Board 3 — Floral & Cheerful' };
+  let counts = { 1: 0, 2: 0, 3: 0 };
+  try {
+    const res = await fetch('/api/poll');
+    if (res.ok) counts = await res.json();
+  } catch(e) {}
+  const total = (counts[1] || 0) + (counts[2] || 0) + (counts[3] || 0);
+  const pct = v => total > 0 ? Math.round((v / total) * 100) : 0;
+  el.innerHTML = `
+    <div class="poll-wrap">
+      <div class="poll-heading">Cast Your Vote</div>
+      <div class="poll-thanks">Thanks for voting! You chose ${labels[voted]}.</div>
+      <table class="poll-table">
+        <thead><tr><th>Mood Board</th><th class="poll-bar-cell"></th><th>Votes</th></tr></thead>
+        <tbody>
+          ${[1,2,3].map(i => `
+          <tr>
+            <td>${labels[i]}${i === voted ? ' ✓' : ''}</td>
+            <td class="poll-bar-cell"><div class="poll-bar-bg"><div class="poll-bar-fill" style="width:${pct(counts[i]||0)}%"></div></div></td>
+            <td>${counts[i] || 0} (${pct(counts[i]||0)}%)</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+      <div class="poll-total">${total} vote${total !== 1 ? 's' : ''} total</div>
+    </div>`;
+}
+
+function initPolls() {
+  const el = document.getElementById('bathroom-poll');
+  if (el) renderPoll(el);
+}
 </script>
 </body>
 </html>
