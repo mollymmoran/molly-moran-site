@@ -151,7 +151,15 @@
     .post-body li { font-size: 16px; line-height: 1.9; color: #333; margin-bottom: 6px; }
     .post-body strong { font-weight: 600; color: var(--amber); }
     .post-body a { color: var(--crimson); text-decoration: underline; }
-    .post-body img { width: 100%; max-width: 100%; height: auto; margin: 32px 0; display: block; }
+    .post-body img { width: 100%; max-width: 100%; height: auto; margin: 32px 0; display: block; cursor: zoom-in; }
+
+    /* LIGHTBOX */
+    .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out; }
+    .lightbox.open { display: flex; animation: fadeIn 0.2s ease; }
+    .lightbox img { max-width: 100%; max-height: 90vh; object-fit: contain; box-shadow: 0 8px 48px rgba(0,0,0,0.5); cursor: default; }
+    .lightbox-close { position: fixed; top: 20px; right: 28px; color: white; font-size: 32px; cursor: pointer; line-height: 1; opacity: 0.8; background: none; border: none; font-family: sans-serif; }
+    .lightbox-close:hover { opacity: 1; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
     /* POLL */
     .poll-wrap { margin: 48px 0 16px; border-top: 3px solid var(--dusk); padding-top: 36px; }
@@ -279,6 +287,12 @@ My husband is equal parts handyman and hype man — and I couldn't do any of thi
     </div>
     <div class="footer-copy">© 2026 Molly Moran Design · mollymorandesign.com</div>
   </footer>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()"/>
 </div>
 
 <!-- ══════════ POST PAGE ══════════ -->
@@ -417,6 +431,18 @@ function openPost(index) {
     img.style.margin = '32px 0';
   });
   initPolls();
+  // Lightbox
+  bodyEl.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', () => {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      document.getElementById('lightbox').classList.add('open');
+    });
+  });
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
 }
 
 window.addEventListener('popstate', () => { showPage('home'); });
