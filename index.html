@@ -459,10 +459,16 @@ async function submitVote(option) {
 async function loadPollResults(el, voted) {
   const labels = { 1: 'Mood Board 1 — Moody Olive & Cream Whites', 2: 'Mood Board 2 — Dark & Dramatic Marble', 3: 'Mood Board 3 — Floral & Cheerful' };
   let counts = { 1: 0, 2: 0, 3: 0 };
+  let debugMsg = '';
   try {
     const res = await fetch('/api/poll');
-    if (res.ok) counts = await res.json();
-  } catch(e) {}
+    const text = await res.text();
+    if (res.ok) {
+      counts = JSON.parse(text);
+    } else {
+      debugMsg = `API error ${res.status}: ${text}`;
+    }
+  } catch(e) { debugMsg = `Fetch failed: ${e.message}`; }
   const total = (counts[1] || 0) + (counts[2] || 0) + (counts[3] || 0);
   const pct = v => total > 0 ? Math.round((v / total) * 100) : 0;
   el.innerHTML = `
@@ -481,6 +487,7 @@ async function loadPollResults(el, voted) {
         </tbody>
       </table>
       <div class="poll-total">${total} vote${total !== 1 ? 's' : ''} total</div>
+      ${debugMsg ? `<div style="font-size:11px;color:red;margin-top:8px">${debugMsg}</div>` : ''}
     </div>`;
 }
 
