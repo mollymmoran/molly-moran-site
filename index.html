@@ -434,7 +434,7 @@ function renderPoll(el) {
         <div class="poll-heading">Cast Your Vote</div>
         <div class="poll-subheading">Which direction would you take the bathroom?</div>
         <div class="poll-options">
-          <button class="poll-btn" onclick="submitVote(1)">Mood Board 1 — Moody Olive &amp; Cream</button>
+          <button class="poll-btn" onclick="submitVote(1)">Mood Board 1 — Moody Olive &amp; Cream Whites</button>
           <button class="poll-btn" onclick="submitVote(2)">Mood Board 2 — Dark &amp; Dramatic Marble</button>
           <button class="poll-btn" onclick="submitVote(3)">Mood Board 3 — Floral &amp; Cheerful</button>
         </div>
@@ -457,7 +457,7 @@ async function submitVote(option) {
 }
 
 async function loadPollResults(el, voted) {
-  const labels = { 1: 'Mood Board 1 — Moody Olive & Cream', 2: 'Mood Board 2 — Dark & Dramatic Marble', 3: 'Mood Board 3 — Floral & Cheerful' };
+  const labels = { 1: 'Mood Board 1 — Moody Olive & Cream Whites', 2: 'Mood Board 2 — Dark & Dramatic Marble', 3: 'Mood Board 3 — Floral & Cheerful' };
   let counts = { 1: 0, 2: 0, 3: 0 };
   try {
     const res = await fetch('/api/poll');
