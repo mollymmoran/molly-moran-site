@@ -1,12 +1,11 @@
 ---
-title: Three Ways to Redo my 1950s Bathroom
+title: Three Bathroom Mood Boards
 date: May 29, 2026
 category: My Home
 excerpt: An original bathroom, three mood boards and a poll to help me make up my mind.
-cover_image: /images/bathroom-ai-render.jpg
-hide_cover: true
+cover_image: /images/ai-bathroom-render.jpg
 ---
-![](/images/bathroom-original.jpeg)
+![](/images/original-bathroom.jpeg)
 
 Our bathroom was built in 1957, and it shows — in the best and most stubborn way possible. The peachy-pink color, small mosaic-style flooring, and half height tiled walls wrapping the room aren’t a design choice I made; they’re a design choice that was made for me, by postwar America’s unshakeable confidence in pastel ceramics. This isn’t the glossy, teak-and-geometric Mid-Century Modern you’d pin on a mood board — it’s something more honest than that: a practical, middle-class suburban bathroom built to last, which it has, infuriatingly and impressively, for nearly seven decades. It has held up well but is not my style, which is why I’ve spent an embarrassing amount of time lately creating mood boards wondering what comes next.
 
@@ -15,7 +14,7 @@ Small footprint, big potential — or at least that’s what I keep telling myse
 
 
 
-![](/images/bathroom-option-1.jpeg)
+![](/images/option-1-moodboard.jpeg)
 
 ## Mood Board 1
 
@@ -24,7 +23,7 @@ This one is quiet, simple, and just a little bit moody. A dark olive green vanit
 
 
 
-![](/images/bathroom-option-2.jpeg)
+![](/images/option-2-moodboard.jpeg)
 
 ## Mood Board 2
 
@@ -33,7 +32,7 @@ This board commits to drama and earns it. A dark charcoal marble basketweave flo
 
 
 
-![](/images/bathroom-option-3.jpeg)
+![](/images/option-3-mood-board.jpeg)
 
 ## Mood Board 3
 
@@ -43,5 +42,3 @@ If this bathroom had a personality, it would bring you flowers — literally. Th
 
 
 Three mood boards, one bathroom, and zero decisions made — welcome to the remodel planning phase, where the ideas are endless and the budget is hypothetical. I’ll be living with all three of these for a while before I commit and make a realistic plan, but in the meantime I want to hear from you. Which direction would you take it? Answer in the poll below!
-
-<div id="bathroom-poll"></div>
