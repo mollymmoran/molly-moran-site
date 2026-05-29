@@ -269,11 +269,6 @@ My husband is equal parts handyman and hype man — and I couldn't do any of thi
     <h1 class="post-header-title" id="post-title"></h1>
     <div class="post-byline">By <span>Molly Moran</span> &nbsp;·&nbsp; <span id="post-date"></span></div>
   </div>
-  <div class="post-hero-img" id="post-hero-wrap">
-    <div class="post-hero-placeholder">
-      <svg width="70" height="70" viewBox="0 0 60 60" fill="none"><rect x="8" y="16" width="44" height="32" rx="2" stroke="#b5a96a" stroke-width="1.5"/><path d="M8 26 L20 20 L30 28 L42 18 L52 26" stroke="#b5a96a" stroke-width="1.2" fill="none"/><circle cx="18" cy="22" r="3" stroke="#b5a96a" stroke-width="1.2"/></svg>
-    </div>
-  </div>
   <div class="post-body">
     <button class="back-link" onclick="showPage('home')">← Back to All Posts</button>
     <div id="post-body-content"></div>
@@ -376,13 +371,6 @@ function openPost(index) {
   document.getElementById('nav-home').classList.add('active');
   history.pushState({ page: 'post' }, '');
   window.scrollTo(0, 0);
-  // Hero image
-  const heroWrap = document.getElementById('post-hero-wrap');
-  if (post.cover_image) {
-    heroWrap.innerHTML = `<img src="${post.cover_image}" alt="${post.title}" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover"/>`;
-  } else {
-    heroWrap.innerHTML = `<div class="post-hero-placeholder"><svg width="70" height="70" viewBox="0 0 60 60" fill="none"><rect x="8" y="16" width="44" height="32" rx="2" stroke="#b5a96a" stroke-width="1.5"/><path d="M8 26 L20 20 L30 28 L42 18 L52 26" stroke="#b5a96a" stroke-width="1.2" fill="none"/><circle cx="18" cy="22" r="3" stroke="#b5a96a" stroke-width="1.2"/></svg></div>`;
-  }
   // Render markdown body
   const bodyEl = document.getElementById('post-body-content');
   try {
