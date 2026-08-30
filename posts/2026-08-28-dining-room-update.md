@@ -43,14 +43,14 @@ We went with classic Roman shades from Select Blinds in white linen — I love t
 
 What’s Left?
 
-* 	New dining table in a wood tone that complements the flooring
-* 	Chandelier
-* 	Art
-* 	Mirror
-* 	Upholstered bench for under the window (pulls out for extra seating when needed)
-* 	Dining chairs
-* 	Decorating the bookshelves (SO excited for this one)
-* 	Wallpaper?? Still undecided, but I’ve been ordering samples like it’s my job
+* New dining table in a wood tone that complements the flooring
+* Chandelier
+* Art
+* Mirror
+* Upholstered bench for under the window (pulls out for extra seating when needed)
+* Dining chairs
+* Decorating the bookshelves (SO excited for this one)
+* Wallpaper?? Still undecided, but I’ve been ordering samples like it’s my job
 
 
 
